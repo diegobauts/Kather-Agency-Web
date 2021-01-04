@@ -1,0 +1,491 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* z-index: 99999999999 !important; */
+    background-color: #131313 !important;
+    overflow-x: hidden;
+}
+
+
+html::-webkit-scrollbar {
+    width: 7px;
+}
+html::-webkit-scrollbar-thumb {
+    background: #22c6e3;
+    border-radius:50px;
+}
+
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+    background: #22c6e3;
+    border-radius:50px;
+}
+
+
+
+body {
+
+    background-color: #131313 !important;
+}
+.toggle-btn-kather {
+    position: fixed;
+    margin: 1.4em;
+    padding: 1em;
+    width: 40px;
+    height: 12px;
+    right: 0;
+    top: 2%;
+    z-index: 99999999;
+    mix-blend-mode: difference;
+    
+
+    
+}
+
+span.one-kather {
+    position: fixed;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    mix-blend-mode: difference;
+    right: 0;
+    
+}
+
+span.two-kather {
+    position: fixed;
+    width: 26px;
+    height: 2px;
+    background: #fff;
+    margin-top: 6px;
+    mix-blend-mode: difference;
+    right: 0;
+    
+}
+span.three-kather{
+    position: fixed;
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    margin-top: 12px;
+    mix-blend-mode: difference;
+    right: 0;
+   
+}
+
+.menu-kather {
+    z-index: 999;
+    position: fixed;
+    background: #101010;
+    height: 100vh;
+    width: 100%;
+    /* top: -100%; */ 
+    left: -100%;
+    top: 0;
+    
+    
+
+
+}
+
+.data-kather {
+    padding: 3em 0 0 2em;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+}
+
+li:first-child {
+    color: #22c6e3;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+li:not(:first-child) {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 1em;
+}
+
+/* a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Playfair Display";
+    transition: 1s;
+} */
+.order-kather{
+    font-size: .3333em;
+    color: #fff;
+    vertical-align: middle;
+}
+.item-menu{
+    background:linear-gradient(#22c6e3, #22c6e3) left no-repeat, #fff;
+    background-size: 0% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+.item-menu:hover{
+    background-size: 100% 100%;
+
+}
+
+.kather-social-media{
+    position: absolute;
+    top: 85%;
+    left: 4.5em;
+    transform: translate(-50%, -50%);
+}
+
+.kather-social-media ul li {
+    display: inline-block;
+    text-decoration: none;
+  /*  color: #fff; */
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+a.fab.fa-facebook-square.kather-facebook{
+    text-decoration: none;
+   color:  #fff;
+   box-shadow: 0 4px 40px 0 #22c6e3 inset, 0 4px 40px 0 #22c6e3;
+   background-color: transparent;
+}
+a.fab.fa-instagram.kather-instagram{
+    text-decoration: none;
+    background-color: transparent;
+
+    color:  #fff;
+    box-shadow: 0 4px 40px 0 #22c6e3 inset, 0 4px 40px 0 #22c6e3;
+}
+
+
+
+/************************css para que el logo gire *****************************/
+.circular-text{
+    position: fixed;
+    top: 4%;
+    left: 5%;
+    /* margin-top: 20px;
+    margin-left: 20px; */
+    transform: translate(-50% -50%);
+    color: rgba(255, 255, 255, 1);
+    font-size: 6px;
+    letter-spacing: 2px;
+    font-family: "Playfair Display";
+    transition: 0.5s ease-out;
+    mix-blend-mode: difference;
+    z-index: 99;
+    
+}
+.arrow {
+    position: fixed;
+    top: 9.5%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    z-index: 99;
+
+
+}
+.k {
+    font-family: "Playfair Display";
+    font-size: 40px;
+    color: #fff;
+    mix-blend-mode: difference;
+    z-index: 99;
+
+}
+section {
+     margin-top: 100vh;
+     background-color: #fff;
+     height: 100vh;
+}
+/*************************css para cursor******************************/
+* {
+   cursor: none;
+}
+.cursor {
+   --size: 6px;
+   height: var(--size);
+   width:  var(--size);
+   border-radius: 50%;
+   position: absolute;
+   z-index: 10000;
+   transform: translate(-50%, -50%);
+   pointer-events: none;
+   mix-blend-mode: difference;
+}
+.cursor.cursor-shadow {
+   background-color: transparent;
+   border: 2px solid #fff;
+   --size: 30px;
+   transition: top .2s, left .2s,
+             width .2s, height .2s,
+             background-color .2s, border-color 0.2s;
+   transition-timing-function: ease-out;
+}
+.cursor.cursor-dot {
+   background: #fff;
+    transition: width .2s, height .2s;
+    mix-blend-mode: difference;
+}
+.cursor-shadow.active {
+   --size: 80px;
+   border-color: rgba(255,255,255, 0);
+   background-color: rgba(255,255,255,.1);
+}
+.cursor-dot.active {
+   --size: 0;
+}
+a {
+   cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+    
+}
+/********************************Codigo Para Banner*****************************************/
+section {
+    margin: 0;
+    height: auto;
+    background-color: #131313;
+}
+section.banner-kather-agency{
+    margin-top:5em;
+}
+.text-kather-agency{
+    margin-top:5em;
+    position: absolute;
+    top: 5em;
+    left: 0;
+    margin-left: 5em;
+    width: 50%;
+}
+.title-kather{
+    text-align: left;
+    font-family: "Playfair Display";
+    font-size: 2.5em;
+    color: #d9d9d9;
+
+}
+.description-kather{
+    text-align: left;
+    color:#808080;
+    font-size: 16px;
+    font-family: "lato";
+}
+.separator-gradiant{
+    width: 180px;
+    height: 5px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #22c6e3,#126878);
+    
+
+}
+.separator-gradiant::before{
+    position: absolute;
+    content: '';
+    /* top: 0;
+    left: 0; */
+    background:linear-gradient(to right, #22c6e3,#126878);
+    width: 180px;
+    height: 5px;
+    filter: blur(10px);
+    /* z-index: -1; */
+}
+.image-kather-agency{
+    position: relative;
+    float: right;
+    width: 50%;
+    margin-top: 0em;
+    
+    
+}
+.btn-banner{
+    margin-top: 6em;
+   position: absolute;
+   padding-top: 10px;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Lato";
+    font-size: 13px ;
+    font-weight: bold;
+    width: 130px;
+    height: 25px;
+    background: linear-gradient(to right, #22c6e3,#126878);
+    z-index: 1;
+    
+}
+.btn-banner:hover{
+    color: #fff;
+}
+.btn-banner::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background:linear-gradient(to right, #22c6e3,#126878);
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+      z-index: -1;  
+}
+
+
+
+/********************************Codigo Para seccion 2*****************************************/
+section {
+    margin: 0;
+    height: auto;
+    background-color: #131313;
+}
+section.kather-agency-section2{
+    margin-top:100vh;
+    height: 100vh;
+}
+.text-kather-agency-section2{
+    margin-top:10em;
+    position: absolute;
+    /* top: 5em; */
+    right: 0;
+    margin-right: 5em; 
+    width: 50%;
+
+}
+.title-kather-section2{
+    text-align: right;
+    font-family: "Playfair Display";
+    font-size: 2.5em;
+    color: #d9d9d9;
+
+}
+.description-kather-section2{
+    text-align: right;
+    color:#808080;
+    font-size: 16px;
+    font-family: "lato";
+}
+.separator-gradiant-section2{
+    margin-left: auto;
+    width: 130px;
+    height: 5px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #22c6e3,#126878);
+    
+    
+
+}
+.separator-gradiant-section2::before{
+    position: absolute;
+    content: '';
+    /* top: 0;
+    left: 0; */
+    background:linear-gradient(to right, #22c6e3,#126878);
+    width: 130px;
+    height: 5px;
+    filter: blur(10px);
+    /* z-index: -1; */
+}
+
+
+/********************************Codigo Para seccion 3*****************************************/
+
+.element3d{
+    height: 100%;
+    background-color: #131313;
+     align-items: center; 
+    vertical-align: middle; 
+    justify-content: center;
+    
+  }
+  model-viewer {
+      height: 60vh;
+      width: 50%;
+      margin-top: 0;
+      border: 0;
+      background-color: #131313;
+      border: none;
+      overflow-y: hidden;
+      float: right;
+      padding-top: 6em; 
+      
+    }
+    #container-3d {
+      height: 100vh;
+      width: 50%;
+      margin: 0;
+      border: 0;
+      background-color: #131313;
+      border: none;
+      overflow-y: hidden;
+      float: right;
+  
+      
+      
+    }
+
+
+
+
+section.kather-agency-section3{
+    /* margin-top:100vh; */
+    height: 100vh;
+}
+.text-kather-agency-section3{
+    margin-top:10em;
+    position: absolute;
+    /* top: 5em; */
+    left: 0;
+    margin-left: 5em; 
+    width: 50%;
+
+}
+.title-kather-section3{
+    text-align: left;
+    font-family: "Playfair Display";
+    font-size: 2.5em;
+    color: #d9d9d9;
+
+}
+.description-kather-section3{
+    text-align: left;
+    color:#808080;
+    font-size: 16px;
+    font-family: "lato";
+}
+.separator-gradiant-section3{
+   /*  margin-left: auto; */
+    width: 100px;
+    height: 5px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #22c6e3,#126878);
+    
+    
+
+}
+.separator-gradiant-section3::before{
+    position: absolute;
+    content: '';
+    /* top: 0;
+    left: 0; */
+    background:linear-gradient(to right, #22c6e3,#126878);
+    width: 100px;
+    height: 5px;
+    filter: blur(10px);
+    /* z-index: -1; */
+}
