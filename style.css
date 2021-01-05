@@ -356,6 +356,15 @@ section.kather-agency-section2{
     margin-top:100vh;
     height: 100vh;
 }
+.image-section2{
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-top: 5em;
+    margin-left: 40px;
+    
+    
+}
 .text-kather-agency-section2{
     margin-top:10em;
     position: absolute;
@@ -485,6 +494,70 @@ section.kather-agency-section3{
     left: 0; */
     background:linear-gradient(to right, #22c6e3,#126878);
     width: 100px;
+    height: 5px;
+    filter: blur(10px);
+    /* z-index: -1; */
+}
+/********************************Codigo Para seccion 4*****************************************/
+section {
+    margin: 0;
+    height: auto;
+    background-color: #131313;
+}
+section.kather-agency-section4{
+   /*  margin-top:300vh; */
+    height: 100vh;
+}
+
+.image-section4{
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-top: 5em;
+    margin-left: 40px;
+    
+    
+}
+.text-kather-agency-section4{
+    margin-top:10em;
+    position: absolute;
+    /* top: 5em; */
+    right: 0;
+    margin-right: 5em; 
+    width: 50%;
+
+}
+.title-kather-section4{
+    text-align: right;
+    font-family: "Playfair Display";
+    font-size: 2.5em;
+    color: #d9d9d9;
+
+}
+.description-kather-section4{
+    text-align: right;
+    color:#808080;
+    font-size: 16px;
+    font-family: "lato";
+}
+.separator-gradiant-section4{
+    margin-left: auto;
+    width: 130px;
+    height: 5px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #22c6e3,#126878);
+    
+    
+
+}
+.separator-gradiant-section4::before{
+    position: absolute;
+    content: '';
+    /* top: 0;
+    left: 0; */
+    background:linear-gradient(to right, #22c6e3,#126878);
+    width: 130px;
     height: 5px;
     filter: blur(10px);
     /* z-index: -1; */
