@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aos.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -12,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="circletype.min.js"></script>
+    <script src="aos.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -114,11 +116,11 @@
         </div>
 
         <div class="text-kather-agency-section2">
-            <p class="title-kather-section2 anim-text">Diseño Web</p>
+            <p class="title-kather-section2 " data-aos="zoom-out-left">Diseño Web</p>
             
             <div class="separator-gradiant-section2"></div>
         
-            <p class="description-kather-section2 anim-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+            <p class="description-kather-section2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
                 Quam consequatur dolore reiciendis aliquam, itaque tempore dignissimos<br>
                 dolorum harum fugit labore nemo tempora facilis eligendi<br>
                 vitae esse aut magni commodi delectus.</p>
@@ -138,11 +140,11 @@
 
 
         <div class="text-kather-agency-section3">
-            <p class="title-kather-section3 anim-text">Diseño 3D</p>
+            <p class="title-kather-section3 " data-aos="zoom-out-right">Diseño 3D</p>
             
             <div class="separator-gradiant-section3"></div>
         
-            <p class="description-kather-section3 anim-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+            <p class="description-kather-section3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
                 Quam consequatur dolore reiciendis aliquam, itaque tempore dignissimos<br>
                 dolorum harum fugit labore nemo tempora facilis eligendi<br>
                 vitae esse aut magni commodi delectus.</p>
@@ -168,11 +170,11 @@
         </div>
 
         <div class="text-kather-agency-section4">
-            <p class="title-kather-section4 anim-text">Diseño UX & UI</p>
+            <p class="title-kather-section4 " data-aos="zoom-out-left">Diseño UX & UI</p>
             
             <div class="separator-gradiant-section4"></div>
         
-            <p class="description-kather-section4 anim-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+            <p class="description-kather-section4 " data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
                 Quam consequatur dolore reiciendis aliquam, itaque tempore dignissimos<br>
                 dolorum harum fugit labore nemo tempora facilis eligendi<br>
                 vitae esse aut magni commodi delectus.</p>
@@ -207,8 +209,8 @@
             </video>
         </div>
         
-            <div class="section-form-desktop">
-                <div class="container-form-kather">
+            <div class="section-form-desktop " >
+                <div class="container-form-kather" data-aos="fade-up" >
                     <div class="title-form">
                         <p>INFORMACIÓN DE CONTACTO</p>
                     </div>
@@ -274,14 +276,14 @@
                 </div>
             </div>
             <!-- Formulario de contacto -->
-            <div class="info-contact">
-                <div class="container-info">
+            <div class="info-contact" >
+                <div class="container-info" data-aos="fade-left" >
                 <p class="parrafo-contact">CONECTA  <P class="resaltado">CON NOSOTROS</p></p>    
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <p class="direccion-contact">  1234 CDMX <br>AVADAVILLE <br>11221</p>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <p class="email-phone-contact">
                         INFO@KATHERAGENCY.COM <BR> TELEFONO : (52) 55 66 00 97 79
                     </p>
@@ -431,6 +433,14 @@
     /* tl.from('.social .inner a', {y: 25, opacity:0, duration:3, ease:'expo.out', stagger: .3}, 'bottom'); */
     </script>
 
+
+    <script>
+
+        /**************************script para animacion texto scroll************************************/
+        AOS.init({
+        duration: 2500,
+        });
+    </script>
 
 </body>
 </html>
