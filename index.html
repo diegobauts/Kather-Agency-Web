@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    
+ -->    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="circletype.min.js"></script>
     <script src="aos.js"></script>
     <title>Document</title>
@@ -190,7 +192,29 @@
 
     <section class="kather-agency-section5">
 
+        
+        <div id="main-instagram">
+            <div class="image-frist-instagram"></div>
+             <div class="gallery1-instagram">
+                <div class="image1-instagram"></div>
+                <div class="image2-instagram"></div>
+                <div class="image3-instagram"></div>
+                <div class="image4-instagram"></div>
 
+            </div>
+            <div class="gallery2-instagram">
+                <div class="image5-instagram"></div>
+                <div class="image6-instagram"></div>
+                <div class="image7-instagram"></div>
+                <div class="image8-instagram"></div>
+            </div> 
+        </div>
+        <div class="txt-instagram">
+            <div class="title-instagram"> <p>INSTAGRAM</p></div>
+            <div class="cuerpo-instagram"><p>Síguenos <br> @katheragency</p></div>
+            <div class="leyenda-instagram"><p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. <br> Corporis optio eligendi ut</p></div>
+            <div class="btn"><a href="#" class="btn-instagram cursor-link">SÍGUENOS</a></div>
+        </div>
 
     </section>
 
@@ -298,7 +322,8 @@
      <!-- *********************** fin del codigo para seccion 6********************** -->
 
 
-
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
 
 
 
@@ -441,6 +466,29 @@
         duration: 2500,
         });
     </script>
+
+
+<script type="text/javascript">
+    /************************SCRIPT PARA ANIMACIÓN SECCION 5***************************************/
+    var tl = gsap.timeline({
+            scrollTrigger: { 
+                trigger:"#main-instagram",
+                pin:true,
+               /*  start:"75% bottom ",
+                end:"bottom 15%",  */
+                start:"center center",
+                end:"bottom -300%",
+                /* end:"bottom bottom", */
+                scrub:true,
+                markers:false,
+                
+            }
+            
+            });
+            tl.to(".image-frist-instagram", { scale: 1,  ease:"none", duration: 10})
+            tl.to(".gallery1-instagram", { scale: 1,  ease:"none", duration: 10, delay:-2})
+            tl.to(".gallery2-instagram", { scale: 1,  ease:"none", duration: 10, delay:-5})
+</script>
 
 </body>
 </html>
